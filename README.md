@@ -1,27 +1,54 @@
-# QuizApp
+# Quiz Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.9.
+Este é um projeto de aplicação de quiz desenvolvido com Angular. A aplicação permite aos usuários responder a perguntas de múltipla escolha e ver suas respostas corretas e incorretas.
 
-## Development server
+## Tecnologias Utilizadas
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Angular 15
+- Angular Material
+- SCSS
+- TypeScript
+- HTML
+- JSON
 
-## Code scaffolding
+## Estrutura do Projeto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+A estrutura do projeto é organizada da seguinte forma:
 
-## Build
+src/
+├── app/
+│ ├── core/
+│ │ ├── alternative.dto.ts
+│ │ └── question.dto.ts
+│ ├── services/
+│ │ └── quiz.service.ts
+│ ├── quiz/
+│ │ ├── quiz.component.html
+│ │ ├── quiz.component.scss
+│ │ ├── quiz.component.ts
+│ │ └── quiz.component.spec.ts
+│ ├── app.component.html
+│ ├── app.component.scss
+│ ├── app.component.ts
+│ └── app.module.ts
+├── assets/
+│ └── questions.json
+├── styles.scss
+└── index.html
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Pré-requisitos
 
-## Running unit tests
+Antes de começar, certifique-se de ter o Node.js e o Angular CLI instalados na sua máquina.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- [Node.js](https://nodejs.org/)
+- [Angular CLI](https://angular.io/cli)
 
-## Running end-to-end tests
+## Instalação
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. Clone o repositório para a sua máquina local:
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+git clone https://github.com/IgorBavand/quiz-application
+cd quiz-application
+npm install
+ng serve

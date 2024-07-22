@@ -1,0 +1,22 @@
+
+<div class="quiz-container">
+  <mat-card *ngIf="currentQuestion">
+    <mat-card-header>
+      <mat-card-title>{{ currentQuestion.text }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-radio-group [(ngModel)]="userAnswer" class="quiz-options">
+        <mat-radio-button *ngFor="let option of currentQuestion.alternativeDtos"
+                          [value]="option.text"
+                          [ngClass]="{'correct-answer': option.text === correctAlternative?.text && showNextButton,
+                                      'wrong-answer': option.text !== correctAlternative?.text && option.text === userAnswer && showNextButton}">
+          {{ option.text }}
+        </mat-radio-button>
+      </mat-radio-group>
+    </mat-card-content>
+    <mat-card-actions class="quiz-actions">
+      <button mat-raised-button color="primary" (click)="submitAnswer()" [disabled]="!userAnswer">Responder</button>
+      <button mat-raised-button color="accent" (click)="nextQuestion()" *ngIf="showNextButton">Próxima Pergunta</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/theming';
+@include mat-core();
+
+$primary: mat-palette($mat-indigo);
+$accent: mat-palette($mat-pink, A200, A100, A400);
+
+$theme: mat-light-theme((
+  color: (
+    primary: $primary,
+    accent: $accent
+  )
+));
+
+@include angular-material-theme($theme);
+
+body {
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e0f7fa;
+  color: #424242;
+}
+
+mat-toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.app-content {
+  padding-top: 64px; /* Height of the toolbar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 64px);
+}

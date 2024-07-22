@@ -1,0 +1,27 @@
+[
+  {
+    "question": "Qual é a capital da França?",
+    "options": ["Paris", "Londres", "Berlim", "Madrid"],
+    "answer": "Paris"
+  },
+  {
+    "question": "Qual é o maior planeta do nosso sistema solar?",
+    "options": ["Terra", "Marte", "Júpiter", "Saturno"],
+    "answer": "Júpiter"
+  },
+  {
+    "question": "Qual é o maior planeta do nosso sistema solar?",
+    "options": ["Terra", "Marte", "Júpiter", "Saturno"],
+    "answer": "Júpiter"
+  },
+  {
+    "question": "Qual é o maior planeta do nosso sistema solar?",
+    "options": ["Terra", "Marte", "Júpiter", "Saturno"],
+    "answer": "Júpiter"
+  },
+  {
+    "question": "Qual é o maior planeta do nosso sistema solar?",
+    "options": ["Terra", "Marte", "Júpiter", "Saturno"],
+    "answer": "Júpiter"
+  }
+]
